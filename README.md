@@ -1,1 +1,1 @@
-# palmyra
+# palmyra-atoll
