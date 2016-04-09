@@ -17,7 +17,7 @@ public class Main {
 
     private void run() throws IOException {
         // Get the value of the chunk from the chunk file
-        String chunkValue = Utils.readFileIntoStringNoBreaks(Config.chunkBaseFile + "1.pac");
+        String chunkValue = Utils.readFileIntoStringNoBreaks(Config.chunkBaseFile + "3.pac");
 
         // Create a new Chunk with this chunk string
         Chunk chunk = new Chunk(chunkValue);
@@ -35,6 +35,8 @@ public class Main {
             List<Rule> rules = Utils.rulesFor(positionsOfA);
 
             listOfRulesLists.add(rules);
+
+            System.out.println("Done with " + nucleotide + ".");
         }
 
         Utils.writeRulesToFile(listOfRulesLists);

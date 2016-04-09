@@ -181,6 +181,7 @@ public class Utils {
                 }
             }
             rules.add(new Rule(low, high, d));
+            System.out.println(leftToRemove.size() + " rules remaining.");
             for (int i = low; i <= high; i += d) {
                 leftToRemove.remove(i);
             }
